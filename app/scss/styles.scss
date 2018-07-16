@@ -1,0 +1,119 @@
+.main-content{
+  display:flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width:25rem;
+  border: 1px solid black;
+  @media(max-width:600px) {
+    width:12rem;
+  }
+  .result{
+    text-align: center;
+    border:1px solid black;
+
+  }
+  .content{
+    display:flex;
+    flex-direction: row;
+    @media(max-width:768px) {
+      flex-direction: column-reverse;
+
+    }
+     .saved-maths{
+       border:1px solid black;
+       border-right: none;
+       padding-top: 2rem;
+       text-align: center;
+       @media(max-width:600px) {
+         margin-top:4.5rem;
+       }
+     }
+     .signs-numbers{
+       display:flex;
+       flex-direction: row;
+       position:relative;
+     .signs{
+        text-align: center;
+       .plus , .minus , .mul ,.div , .eq{
+       border:1px solid black;
+       padding-left: 1rem;
+       padding-right: 1rem;
+
+       @media(max-width:600px) {
+
+       width:1rem;
+
+       }
+
+       }
+       .eq{
+         @media(max-width:600px) {
+
+        width:10rem;
+
+         }
+       }
+       .plus-minus , .mul-div{
+         @media(max-width:600px) {
+          display:flex;
+          flex-direction: row-reverse;
+        justify-content: flex-end;
+         }
+       }
+       @media(max-width:600px) {
+        height:1.5rem;
+        margin-top:5.5rem;
+        margin-right:-10rem;
+
+       }
+
+     }
+     .extra{
+       display:flex;
+       flex-direction: row;
+       position:absolute;
+       bottom:0;
+       margin-left:2.7rem;
+       @media(max-width:600px) {
+          top:9.4rem;
+           margin-left:0;
+       }
+       .save,.cancel{
+        border:1px solid black;
+        height:2rem;
+        text-align: center;
+        border:1px solid black;
+        padding-right:.5rem;
+        width:4rem;
+
+       }
+       .save{
+         @media(max-width:600px) {
+            width:6.8rem;
+         }
+       }
+     }
+     .numbers{
+       display: flex;
+       flex-direction: row;
+       text-align:center;
+       justify-content: flex-end;
+       flex-wrap: wrap;
+       width:12.5rem;
+       @media(max-width:600px) {
+         width:9rem;
+
+       }
+       .num{
+        width:4rem;
+        @media(max-width:600px) {
+          width:2rem;
+          padding-right:1rem;
+        }
+
+       }
+
+     }
+   }//signs numbers
+  }
+}

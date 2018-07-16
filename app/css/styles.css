@@ -1,0 +1,130 @@
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 25rem;
+  border: 1px solid black;
+}
+@media (max-width: 600px) {
+  .main-content {
+    width: 12rem;
+  }
+}
+.main-content .result {
+  text-align: center;
+  border: 1px solid black;
+}
+.main-content .content {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 768px) {
+  .main-content .content {
+    flex-direction: column-reverse;
+  }
+}
+.main-content .content .saved-maths {
+  border: 1px solid black;
+  border-right: none;
+  padding-top: 2rem;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .main-content .content .saved-maths {
+    margin-top: 4.5rem;
+  }
+}
+.main-content .content .signs-numbers {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.main-content .content .signs-numbers .signs {
+  text-align: center;
+}
+.main-content .content .signs-numbers .signs .plus,
+.main-content .content .signs-numbers .signs .minus,
+.main-content .content .signs-numbers .signs .mul,
+.main-content .content .signs-numbers .signs .div,
+.main-content .content .signs-numbers .signs .eq {
+  border: 1px solid black;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .signs .plus,
+  .main-content .content .signs-numbers .signs .minus,
+  .main-content .content .signs-numbers .signs .mul,
+  .main-content .content .signs-numbers .signs .div,
+  .main-content .content .signs-numbers .signs .eq {
+    width: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .signs .eq {
+    width: 10rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .signs .plus-minus,
+  .main-content .content .signs-numbers .signs .mul-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .signs {
+    height: 1.5rem;
+    margin-top: 5.5rem;
+    margin-right: -10rem;
+  }
+}
+.main-content .content .signs-numbers .extra {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2.7rem;
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .extra {
+    top: 9.4rem;
+    margin-left: 0;
+  }
+}
+.main-content .content .signs-numbers .extra .save,
+.main-content .content .signs-numbers .extra .cancel {
+  height: 2rem;
+  text-align: center;
+  border: 1px solid black;
+  padding-right: 0.5rem;
+  width: 4rem;
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .extra .save {
+    width: 6.8rem;
+  }
+}
+.main-content .content .signs-numbers .numbers {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 12.5rem;
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .numbers {
+    width: 9rem;
+  }
+}
+.main-content .content .signs-numbers .numbers .num {
+  width: 4rem;
+}
+@media (max-width: 600px) {
+  .main-content .content .signs-numbers .numbers .num {
+    width: 2rem;
+    padding-right: 1rem;
+  }
+}
